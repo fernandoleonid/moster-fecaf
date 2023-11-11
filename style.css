@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 64px 16px 64px;
+    background-color: #090909;
+    font-family: 'Teko', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promocao{
+    color: #fff;
+    text-decoration: none;
+}
+.idioma{
+    color: #fff;
+    width: 107px;
+    text-align: right;
+}
+
+main{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.conteudo-container{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-titulo{
+    width: 320px;
+    color: #FFF;
+}
+
+.conteudo-titulo h1{
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 80px;
+    
+}
+
+.conteudo-titulo p {
+    font-size: 32px;
+}
+
+.conteudo-titulo strong{
+    color: #6BD41A;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.conteudo-tipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    color: #fff;
+}
+
+.conteudo-tipo p {
+    width: 72px;
+    text-align: center;
+}
+
+.navegacao-container{
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    line-height: 32px;
+    width: 750px;
+    align-self: center;
+    color: #fff;
+}
+.navegacao-container .barra{
+    height: 2px;
+    width: 80%;
+    background-color: #fff;
+}
+
+.navegacao-container .selecionado{
+    height: 3px;
+    width: 30%;
+    background-color: #6BD41A;
+}
+
+footer{
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.background{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -999;
+    opacity: .05;
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 16px;
+    }
+    .promocao{
+        display: none;
+    }
+    .conteudo-tipo{
+        display: none;
+    }
+    .conteudo-titulo{
+        width: 150px;
+    }
+    .conteudo-titulo h1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .conteudo-titulo strong {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .conteudo-titulo p{
+        margin-top:16px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 100;
+    }
+    .navegacao-container{
+        width: 80%;
+    }
+}
